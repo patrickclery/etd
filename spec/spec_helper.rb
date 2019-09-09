@@ -1,6 +1,6 @@
 require "bundler/setup"
 
-require "./app/init"
+require "./app/boot"
 
 require 'contexts/default_context'
 require 'examples/default_examples'
