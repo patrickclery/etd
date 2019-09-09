@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+require './app/init'
+
 options = {}
 OptionParser.new do |opts|
   opts.banner = "Usage: app.rb [options]"
