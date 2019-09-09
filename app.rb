@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require './app/init'
+require './app/boot'
 
 options = {}
 OptionParser.new do |opts|

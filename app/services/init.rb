@@ -1,5 +1,3 @@
-require 'optparse'
-
 module App
   class Init
     class << self
