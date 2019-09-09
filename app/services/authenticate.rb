@@ -3,7 +3,7 @@ module App
     attr_accessor :client
 
     class << self
-      def call(token:, consumer_key:, consumer_secret:, sandbox: true)
+      def call(consumer_key:, consumer_secret:, token: nil, sandbox: true)
         @client ||= EvernoteOAuth::Client.new(token:           token,
                                               consumer_key:    consumer_key,
                                               consumer_secret: consumer_secret,
