@@ -60,3 +60,4 @@ build-iPhoneSimulator/
 out
 gen
 /Gemfile.lock
+/.rspec_status
