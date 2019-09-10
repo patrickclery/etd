@@ -1,5 +1,5 @@
 module App
-  class Authenticate
+  class GetClient
     attr_accessor :client
 
     class << self
