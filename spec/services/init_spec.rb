@@ -7,9 +7,4 @@ RSpec.describe App::Init do
 
   it { should respond_to(:call) }
 
-  it 'can connect to the Evernote API' do
-    pending
-    fail
-  end
-
 end

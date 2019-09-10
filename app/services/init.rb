@@ -1,8 +1,11 @@
 module App
   class Init
+
+    attr_reader :client
+
     class << self
-      def call
-        # App code goes here
+      def call(**options)
+        @client = App::GetClient.call(**options)
       end
     end
   end

@@ -5,30 +5,20 @@ require './app/boot'
 options = {}
 OptionParser.new do |opts|
   opts.banner = "Usage: app.rb [options]"
-=begin
-
-### Adding Custom Options to your Shell Script
-
-- Add an option
-
-  ```ruby
-  opts.on("--html", "Output in HTML format (default is CSV)") do
-    options[:format] = :html
+  opts.on("-k KEY", "--consumer-key=KEY", String, "Evernote OAuth Key") do |consumer_key|
+    options[:consumer_key] = consumer_key
   end
-  ```
-- Add an option with parameters
-
-  ```ruby
-  opts.on("-o FILE", "--output-file=FILE", String, "File to output to. (Default: 'results.{csv,html}')") do |output_file|
-    options[:output_file] = output_file
+  opts.on("-s SECRET", "--consumer-secret=SECRET", String, "Evernote OAuth Secret") do |consumer_secret|
+    options[:consumer_secret] = consumer_secret
   end
-  ```
-
-=end
   opts.on("-h", "--help", "Prints this help") do
     puts opts
     exit 1
   end
 end.parse!(into: {})
+
+# Fallback to Env Vars
+options[:consumer_key] ||= ENV['evernote_consumer_key']
+options[:consumer_secret] ||= ENV['evernote_consumer_secret']
 
 App::Init.call(**options)
