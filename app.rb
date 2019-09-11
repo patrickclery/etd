@@ -5,6 +5,9 @@ require './app/boot'
 options = {}
 OptionParser.new do |opts|
   opts.banner = "Usage: app.rb [options]"
+  opts.on("-t TOKEN", "--auth-token=TOKEN", String, "Evernote OAuth Key") do |auth_token|
+    options[:auth_token] = auth_token
+  end
   opts.on("-k KEY", "--consumer-key=KEY", String, "Evernote OAuth Key") do |consumer_key|
     options[:consumer_key] = consumer_key
   end
@@ -18,7 +21,8 @@ OptionParser.new do |opts|
 end.parse!(into: {})
 
 # Fallback to Env Vars
-options[:consumer_key] ||= ENV['evernote_consumer_key']
+options[:consumer_key]    ||= ENV['evernote_consumer_key']
 options[:consumer_secret] ||= ENV['evernote_consumer_secret']
+options[:auth_token]      ||= ENV['evernote_auth_token']
 
 client = App::Base.new(**options)

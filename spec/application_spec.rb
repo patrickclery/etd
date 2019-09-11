@@ -1,6 +1,6 @@
 RSpec.describe 'Shell application' do
 
-  include_context 'default_context'
+  include_context 'default'
 
   it 'is executable from the command-line' do
     expect(File.executable?("./app.rb")).to be true

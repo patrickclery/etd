@@ -1,6 +1,7 @@
 require "bundler/setup"
 require "./app/boot"
-require 'contexts/default_context'
+require 'contexts/default'
+require 'contexts/sandbox'
 require 'examples/default_examples'
 require 'webmock/rspec'
 require 'factory_bot'
