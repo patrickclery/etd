@@ -21,4 +21,4 @@ end.parse!(into: {})
 options[:consumer_key] ||= ENV['evernote_consumer_key']
 options[:consumer_secret] ||= ENV['evernote_consumer_secret']
 
-App::Init.call(**options)
+client = App::Base.new(**options)

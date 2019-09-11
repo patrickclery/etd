@@ -1,6 +1,6 @@
 module App
-  class GetClient
-    attr_accessor :client
+  class GetEvernoteClient
+    attr_accessor :evernote
 
     class << self
       def call(consumer_key:, consumer_secret:, token: nil, sandbox: true)

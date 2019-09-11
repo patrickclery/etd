@@ -3,10 +3,10 @@ RSpec.describe App::UpdateNotebookTag do
 
   it { should respond_to(:call).with_keywords(:notebook_name) }
 
-  context 'when a notebook name is supplied' do
-    subject { described_class.call(notebook_name: 'Awesome Project') }
-
-    it { should eq '#awesome_project' }
+  it 'can tag each note in a notebook' do
+    note_count = evernote.evernote(tag_name: '#awesome_project')
+    expect(note_count).to eq 0
+    expect(subject.call(notebook_name: 'Awesome Project')).to eq 3
   end
 
 end

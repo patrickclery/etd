@@ -1,9 +1,9 @@
 require "bundler/setup"
-
 require "./app/boot"
-
 require 'contexts/default_context'
 require 'examples/default_examples'
+require 'webmock/rspec'
+require 'factory_bot'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -18,3 +18,5 @@ RSpec.configure do |config|
 
   config.shared_context_metadata_behavior = :apply_to_host_groups
 end
+
+WebMock.enable!

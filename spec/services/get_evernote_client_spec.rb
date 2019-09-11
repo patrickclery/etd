@@ -1,4 +1,4 @@
-RSpec.describe App::GetClient do
+RSpec.describe App::GetEvernoteClient do
 
   include_context 'default_context'
 

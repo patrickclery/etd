@@ -1,6 +1,10 @@
 RSpec.shared_context "default_context" do
 
   subject { described_class }
+  let(:evernote) { App::Base.new(consumer_key:    consumer_key,
+                                 consumer_secret: consumer_secret,
+                                 token:           nil,
+                                 sandbox:         true) }
 
   let(:tmp_file) { Tempfile.new('rspec.output') }
 
