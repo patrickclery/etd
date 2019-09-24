@@ -2,6 +2,19 @@
 
 _ETD_ is [my](https://github.com/patrickclery) implementation of David Allen's _Getting Things Done_ system  across MacOS, Evernote, & extending to mobile devices.
 
+## Capturing:
+
+* Anything that takes more than one action, becomes its own Project
+* Set _location-specific reminders_ using Apple’s location-based reminders
+* if it’s Amazon, add it to your cart/wishlist (via Alexa is often best: “Alexa, add ______ to my shopping cart"
+* If it’s not actionable right now, set a reminder (so you don't forget) and mark it as Waiting
+    * (Using your mouse cursor) Click the three dots in the top-right corner of the Note Window and select Add Reminder…
+    * Choose a date or click Tomorrow
+    * Press `^⌘M` then choose the _WAITING folder
+* I use a printer that has Evernote integration - Any paper I get gets scanned, uploaded to my Evernote scans, & shredded.
+* When I’m away from my computer, I use my Apple Watch’s Evernote app to capture voice recordings of ideas. To capture documents, photos, etc. I’ll use my camera, & save it to Evernote’s inbox to process later.
+* Anything that removes you one step away from the Evernote UI is likely to add more complexity to this system. In my experience, the biggest enemy of using a day-to-day note-taking or organizational system is if it makes your life MORE complex and not less complex. When you have to check multiple websites/apps to get info, that’s when things (in my experience) have broken.
+
 ### Integrations:
 * Alfred - Alfred Evernote workflow search from within MacOS using with `^⌘␣` (the ␣ is a spacebar) then type ens <search term>
 * Cronofy - Syncing to Google Cal
@@ -31,19 +44,6 @@ _ETD_ is [my](https://github.com/patrickclery) implementation of David Allen's _
 * Press `⌘’` and enter #project name as the Note Tag and hit ↵
 * Press `⌘L` and enter a clear & concise Note Title
 * Press `⇥` to focus the Note Body and begin typing
-
-## Capturing:
-
-* If it’s location specific, try to use Apple’s location-based reminders
-* if it’s Amazon, add it to your cart/wishlist (via Alexa is often best: “Alexa, add ______ to my shopping cart"
-* If it’s not actionable right now, set a reminder and mark it as Waiting
-    * (Using your mouse cursor) Click the three dots in the top-right corner of the Note Window and select Add Reminder…
-    * Choose a date or click Tomorrow
-    * Press `^⌘M` then choose the _WAITING folder
-* I use a printer that has Evernote integration - Any paper I get gets scanned, uploaded to my Evernote scans, & shredded.
-* When I’m away from my computer, I use my Apple Watch’s Evernote app to capture voice recordings of ideas. To capture documents, photos, etc. I’ll use my camera, & save it to Evernote’s inbox to process later.
-* Anything that removes you one step away from the Evernote UI is likely to add more complexity to this system. In my experience, the biggest enemy of using a day-to-day note-taking or organizational system is if it makes your life MORE complex and not less complex. When you have to check multiple websites/apps to get info, that’s when things (in my experience) have broken.
-
 
 ### Within MacOS
 
