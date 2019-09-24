@@ -69,9 +69,9 @@ _ETD_ is [my](https://github.com/patrickclery) implementation of David Allen's _
 ## Shortcuts:
 
 * `⌘J` - Search everything: searches notebook names, note titles, note bodies, etc. I use this to navigate around Evernote, rather than Tabbing or reaching for my mouse when I have to change Notes/Notebooks.
-    * `^⌥⌘C` - Copy a note link for the current note in view. After copying, you can paste the link within another note. Usually I’ll do this if I create a resource in Evernote (for examples a PDF) then I’ll link to it under a heading such as “Related Documents” from within a Project Note.
-    * Markdown text is converted on the fly. So you can type things like “[ ]” and it will automatically be replaced with []. 
-    * `⌘L` - Focus the Title text input
-    * `⌘’` - Focus the tags text input
-    * `^⌘M` - Move the note to another notebook
-    * Evernote's editor’s basic formatting shortcuts `^⌘H` is highlight text, `⌘B` is Bold, `⌘U` is underline, `⌘I` is Italics, (see Format > Style in the menubar for the rest)
+* `^⌥⌘C` - Copy a note link for the current note in view. After copying, you can paste the link within another note. Usually I’ll do this if I create a resource in Evernote (for examples a PDF) then I’ll link to it under a heading such as “Related Documents” from within a Project Note.
+* Markdown text is converted on the fly. So you can type things like “[ ]” and it will automatically be replaced with []. 
+* `⌘L` - Focus the Title text input
+* `⌘’` - Focus the tags text input
+* `^⌘M` - Move the note to another notebook
+* Evernote's editor’s basic formatting shortcuts `^⌘H` is highlight text, `⌘B` is Bold, `⌘U` is underline, `⌘I` is Italics, (see Format > Style in the menubar for the rest)
