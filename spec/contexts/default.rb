@@ -7,7 +7,7 @@ RSpec.shared_context "default" do
   let(:client) { EvernoteOAuth::Client.new(**params) }
   let(:params) { { consumer_key:    consumer_key,
                    consumer_secret: consumer_secret,
-                   token:      token,
+                   token:           token,
                    sandbox:         sandbox } }
   let(:consumer_key) { 'barbara' } # username
   let(:consumer_secret) { '0123456789abcdef' } # 16 chars
