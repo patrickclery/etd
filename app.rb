@@ -23,6 +23,6 @@ end.parse!(into: {})
 # Fallback to Env Vars
 options[:consumer_key]    ||= ENV['evernote_consumer_key']
 options[:consumer_secret] ||= ENV['evernote_consumer_secret']
-options[:token]      ||= ENV['evernote_auth_token']
+options[:token]           ||= ENV['evernote_auth_token']
 
 client = App::Base.new(**options)
