@@ -1,5 +1,7 @@
 module App
   class Base
+    extend Dry::Initializer
+
     attr_accessor :consumer_key, :consumer_secret, :token, :sandbox, :note_store_url
 
     def update_notebook(notebook_name:)

@@ -5,13 +5,13 @@ require './app/boot'
 options = {}
 OptionParser.new do |opts|
   opts.banner = "Usage: app.rb [options]"
-  opts.on("-t TOKEN", "--auth-token=TOKEN", String, "Evernote OAuth Key") do |token|
+  opts.on("-t TOKEN", "--auth-token=TOKEN", Types::Strict::String, "Evernote OAuth Key") do |token|
     options[:token] = token
   end
-  opts.on("-k KEY", "--consumer-key=KEY", String, "Evernote OAuth Key") do |consumer_key|
+  opts.on("-k KEY", "--consumer-key=KEY", Types::Strict::String, "Evernote OAuth Key") do |consumer_key|
     options[:consumer_key] = consumer_key
   end
-  opts.on("-s SECRET", "--consumer-secret=SECRET", String, "Evernote OAuth Secret") do |consumer_secret|
+  opts.on("-s SECRET", "--consumer-secret=SECRET", Types::Strict::String, "Evernote OAuth Secret") do |consumer_secret|
     options[:consumer_secret] = consumer_secret
   end
   opts.on("-h", "--help", "Prints this help") do
