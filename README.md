@@ -109,3 +109,7 @@ Then I shred every document using [this shredder](https://www.amazon.ca/gp/produ
 * `⌘’` - Focus the tags text input
 * `^⌘M` - Move the note to another notebook
 * Evernote's editor’s basic formatting shortcuts `^⌘H` is highlight text, `⌘B` is Bold, `⌘U` is underline, `⌘I` is Italics, (see Format > Style in the menubar for the rest)
+
+## OTHER TOOLS
+
+- [Adiós.ai](https://adios.ai/) allows you to schedule your emails to arrive when you want. Mine is set to receive my first emails of the day @ 12pm, then every hour from 3pm-10pm. Limiting your exposure to incoming email allows you to deal with your tasks, then handle all PROCESSING when at once later.
