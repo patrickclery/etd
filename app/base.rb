@@ -2,7 +2,11 @@ module App
   class Base
     extend Dry::Initializer
 
-    attr_accessor :consumer_key, :consumer_secret, :token, :sandbox, :note_store_url
+    option :consumer_key, optional: true
+    option :consumer_secret, optional: true
+    option :token, optional: true
+    option :sandbox, optional: true
+    option :note_store_url, optional: true
 
     def update_notebook(notebook_name:)
       App::UpdateNotebookTag(notebook_name: notebook_name)
