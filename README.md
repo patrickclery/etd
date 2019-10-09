@@ -100,8 +100,17 @@ Then I shred every document using [this shredder](https://www.amazon.ca/gp/produ
 * Press `⌘L` and type #project name as the Note Title
 * Press `⇥` to focus the Note Body
 
+## Doing (Taking Action)
+
+  > **ETD Fundamental Law:** Always have one -- & only ONE -- _Next Action_ assigned in your _Shortcuts_.
+
+1. Search for all notes tagged `actionable`.
+2. Press `⇧⌘8` to _Add/Remove the selected _Note_ to Shortcuts_.
+3. Take action! :)
+
 ## KEYBOARD SHORTCUTS
 
+* `⇧⌘8` Add/Remove the selected _Note_ to Shortcuts.
 * `⌘J` - Search everything: searches notebook names, note titles, note bodies, etc. I use this to navigate around Evernote, rather than Tabbing or reaching for my mouse when I have to change Notes/Notebooks.
 * `^⌥⌘C` - Copy a note link for the current note in view. After copying, you can paste the link within another note. Usually I’ll do this if I create a resource in Evernote (for examples a PDF) then I’ll link to it under a heading such as “Related Documents” from within a Project Note.
 * Markdown text is converted on the fly. So you can type things like “[ ]” and it will automatically be replaced with []. 
