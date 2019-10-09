@@ -2,12 +2,20 @@ RSpec.describe App::UpdateNotebookTag do
   include_context 'default'
 
   let(:app) do
-    App::Base.new.tap do |obj|
-      obj.consumer_key    = consumer_key
-      obj.consumer_secret = consumer_secret
-      obj.token      = nil
-      obj.sandbox         = true
-    end
+    App::Base.new(consumer_key:    consumer_key,
+                  consumer_secret: consumer_secret,
+                  token:           nil,
+                  sandbox:         true)
+  end
+
+  before do
+    allow(EvernoteOAuth::Client).to receive(:new).with({ consumer_key:    consumer_key,
+                                                         consumer_secret: consumer_secret,
+                                                         token:           nil,
+                                                         sandbox:         true }).and_return(EvernoteOAuth::Client.new)
+    stub_request(:post, "https://sandbox.evernote.com/edam/user")
+      .with(:anything)
+      .to_return(status: 200, body: "", headers: {})
   end
 
   it { should respond_to(:call).with_keywords(:notebook_name) }
